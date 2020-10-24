@@ -11,7 +11,7 @@ export default function Color({ id, title, color, rating }) {
       <div style={{ height: 50, backgroundColor: color }} />
       <StarRating
         selectedStars={rating}
-        onRate={rating => rateColor(id, rating)}
+        onRate={(rating) => rateColor(id, rating)}
       />
     </section>
   );

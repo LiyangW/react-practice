@@ -1,4 +1,4 @@
-import React /*, { useState } */from "react";
+import React /*, { useState } */ from "react";
 import { FaStar } from "react-icons/fa";
 
 const Star = ({ selected = false, onSelect = (f) => f }) => (
@@ -8,7 +8,7 @@ const createArray = (length) => [...Array(length)];
 export default function StarRating({
   totalStars = 5,
   selectedStars = 0,
-  onRate = f => f
+  onRate = (f) => f,
 }) {
   return (
     <>

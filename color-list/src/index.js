@@ -5,10 +5,9 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { ColorProvider } from "./components/colorHooks";
 
-
 ReactDOM.render(
   <React.StrictMode>
-    <ColorProvider >
+    <ColorProvider>
       <App />
     </ColorProvider>
   </React.StrictMode>,

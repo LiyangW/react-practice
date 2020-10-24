@@ -1,4 +1,4 @@
-import React/*, { useState } */from "react";
+import React /*, { useState } */ from "react";
 import "./App.css";
 import ColorList from "./components/ColorList";
 import AddColorForm from "./components/AddColorForm";

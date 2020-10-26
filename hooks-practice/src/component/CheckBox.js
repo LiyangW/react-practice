@@ -5,13 +5,15 @@ export default function Checkbox() {
 
   useEffect(() => {
     localStorage.setItem("checkbox-value", checked);
-  });
+  },[checked]);
   useEffect(() => {
     console.log(checked ? "Yes, checked" : "No, not checked");
-  });
+  },[checked]);
+
 //   useEffect(() => {
 //     txtInputRef.current.focus();
 //   });
+
   return (
     <>
       <input

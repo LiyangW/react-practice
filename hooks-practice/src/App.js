@@ -4,6 +4,8 @@ import CheckBox from "./component/CheckBox";
 import Phrase from "./component/Phrase";
 import { CallBack, WordCount } from "./component/Words";
 import { useWindowSize, useMousePosition } from "./component/hooks";
+import User from "./component/User";
+import CatFunc from "./component/Cat"
 // import { useEffect, useLayoutEffect } from "react";
 
 export default function App() {
@@ -17,8 +19,10 @@ export default function App() {
     <>
       <h1>open your console</h1>
       <CallBack />
-      <CheckBox /> <br />
+      <CheckBox /> 
+      <br />
       <Phrase />
+      <br/>
       <WordCount>what is that f</WordCount>
       <p>
         windowsize is {x} * {y}
@@ -26,6 +30,9 @@ export default function App() {
       <p>
         mouse position is {a} * {b}
       </p>
+      <User/>
+      <br/>
+      <CatFunc/>
     </>
   );
 }

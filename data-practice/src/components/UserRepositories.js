@@ -1,5 +1,5 @@
 import React from "react";
-import {Fetch} from "./hooks";
+import  Fetch  from "./Fetch";
 import RepoMenu from "./RepoMenu";
 
 export default function UserRepositories({
@@ -13,7 +13,7 @@ export default function UserRepositories({
       renderSuccess={({ data }) => (
         <RepoMenu
           repositories={data}
-          selectedRepo={selectedRepo}
+          selected={selectedRepo}
           onSelect={onSelect}
         />
       )}

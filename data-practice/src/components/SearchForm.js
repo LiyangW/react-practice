@@ -1,6 +1,6 @@
 import React from "react";
-import { useInput } from "./useInput";
-export default function SearchForm({ value, onSearch = (f) => f }) {
+import { useInput } from "./hooks";
+export default function SearchForm({ value = "", onSearch = (f) => f }) {
   const [inputProps] = useInput(value);
   const submit = (e) => {
     e.preventDefault();
@@ -8,7 +8,7 @@ export default function SearchForm({ value, onSearch = (f) => f }) {
   };
   return (
     <form onSubmit={submit}>
-      <input type="text" placeholder="Search.." {...inputProps}></input>
+      <input type="text" {...inputProps}></input>
       <button type="submit">Submit</button>
     </form>
   );

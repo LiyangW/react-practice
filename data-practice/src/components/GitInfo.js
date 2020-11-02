@@ -1,5 +1,5 @@
 import React /*, { useState, useEffect }*/ from "react";
-import { Fetch } from "./hooks";
+import  Fetch  from "./Fetch";
 import UserDetails from "./UserDetails";
 
 export function GitHubUser({ login }) {
